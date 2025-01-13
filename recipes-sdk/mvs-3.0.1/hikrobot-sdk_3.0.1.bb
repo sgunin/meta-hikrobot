@@ -5,31 +5,34 @@ SUMMARY = "HikVision SDK 3.0.1"
 SECTION = "sdk"
 LICENSE = "CLOSED"
 
-SRC_URI += ""
 SRC_URI:append:aarch64 = " \
-	file://MVS-3.0.1_aarch64_20241128.deb \
+        file://MVS.tar.gz;subdir=mvs \
 "
 S = "${WORKDIR}"
 
-SYSROOT_DIRS:append = "/opt"
+SYSROOT_DIRS:append = "/opt/mvs"
 
-INSANE_SKIP:${PN} += "already-stripped"
-
-FILES:${PN}: += " \
+FILES:${PN} += " \
         /opt/mvs \
 "
-inherit bin_package pkgconfig
 
-install_deb() {
-	${STAGING_BINDIR_NATIVE}/dpkg --root=${IMAGE_ROOTFS}/ --admindir=${IMAGE_ROOTFS}/var/lib/dpkg/ -i file://MVS-3.0.1_aarch64_20241128.deb
+INSANE_SKIP:${PN} += "already-stripped arch split-strip"
+
+do_install:append() {
+        install -d ${D}/opt/mvs/lib
+        cp -r ${WORKDIR}/mvs/bin ${D}/opt/mvs/
+        cp -r ${WORKDIR}/mvs/include ${D}/opt/mvs/
+        cp -r ${WORKDIR}/mvs/license ${D}/opt/mvs/
+        cp -r ${WORKDIR}/mvs/lib/aarch64 ${D}/opt/mvs/lib
+        cp ${WORKDIR}/mvs/ReleaseNote_EN.txt ${D}/opt/mvs/
 }
 
-ROOTFS_POSTPROCESS_COMMAND += "install_deb; "
-
-do_package[noexec] = "1"
-do_packagedata[noexec] = "1"
 do_package_qa[noexec] = "1"
-do_configure[noexec] = "1"
-do_compile[noexec] = "1"
 
+EXCLUDE_FROM_SHLIBS = "1"
+
+# Disables the files in your package from being split into run-time and debug components
+INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
+
+# Disabled the system from attempting to strip the run-time components of debug information
 INHIBIT_PACKAGE_STRIP = "1"
