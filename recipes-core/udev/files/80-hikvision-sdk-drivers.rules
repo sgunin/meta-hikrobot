@@ -1,0 +1,5 @@
+# Hikvision rule for allow access to USB3 Vision devices
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="2bdf", MODE="0666", GROUP="plugdev"
+
+# Hikvision rule for allow access to Virtual Serial devices
+ACTION=="add", KERNEL=="ttyvirserial[0-9]*", MODE="0666", GROUP="plugdev"
