@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 
 SRC_URI = "file://80-hikvision-sdk.rules"
 
-FILES_${PN} += "${nonarch_base_libdir}/udev/*"
+FILES_${PN} += "${sysconfdir}/udev/rules.d/80-hikvision-sdk.rules"
 
 S = "${WORKDIR}"
 
