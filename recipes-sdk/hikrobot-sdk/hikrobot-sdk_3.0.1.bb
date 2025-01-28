@@ -129,5 +129,5 @@ FILES:${PN} += " \
 "
 
 FILES:${PN}-dev += " \
-	/opt/mvs/include
+	/opt/mvs/include \
 "
