@@ -57,14 +57,14 @@ SRC_URI:append:armhf = " \
 "
 
 SRC_URI:append = " \
-	file://include/CameraParams.h  \
-	file://include/MvCameraControl.h  \
-	file://include/MvErrorDefine.h  \
-	file://include/MvISPErrorDefine.h  \
-	file://include/MvObsoleteInterfaces.h  \
+	file://include/CameraParams.h \
+	file://include/MvCameraControl.h \
+	file://include/MvErrorDefine.h \
+	file://include/MvISPErrorDefine.h \
+	file://include/MvObsoleteInterfaces.h \
 	file://include/ObsoleteCamParams.h \
 	file://include/PixelType.h \
-	file://license/CLIENT_MVS_Linux_license_notice.txt
+	file://license/CLIENT_MVS_Linux_license_notice.txt \
 	file://ReleaseNote_EN.txt \
 	file://hikrobot.sh \
 "
