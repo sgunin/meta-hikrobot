@@ -6,20 +6,20 @@ SECTION = "sdk"
 LICENSE = "CLOSED"
 
 SRC_URI:append:aarch64 = " \
-	file://lib/aarch64/CommonParameters.ini;subdir=../../lib \
-	file://lib/aarch64/libFormatConversion.so;subdir=../../lib \
-	file://lib/aarch64/libMvCameraControl.so.4.5.0.3;subdir=../../lib \
-	file://lib/aarch64/libMVGigEVisionSDK.so.4.5.0.3;subdir=../../lib \
-	file://lib/aarch64/libMvSDKVersion.so;subdir=../../lib \
-	file://lib/aarch64/libswscale.so;subdir=../../lib \
-	file://lib/aarch64/MvProducerGEV.cti;subdir=../../lib \
-	file://lib/aarch64/libavutil.so;subdir=../../lib \
-	file://lib/aarch64/libMediaProcess.so;subdir=../../lib \
-	file://lib/aarch64/libMvCameraControlWrapper.so.4.5.0.1;subdir=../../lib \
-	file://lib/aarch64/libMVRender.so;subdir=../../lib \
-	file://lib/aarch64/libMvUsb3vTL.so.4.5.0.3;subdir=../../lib \
-	file://lib/aarch64/libusb-1.0.so.0;subdir=../../lib \
-	file://lib/aarch64/MvProducerU3V.cti;subdir=../../lib \
+	file://lib/aarch64/CommonParameters.ini;subdir=../lib \
+	file://lib/aarch64/libFormatConversion.so;subdir=../lib \
+	file://lib/aarch64/libMvCameraControl.so.4.5.0.3;subdir=../lib \
+	file://lib/aarch64/libMVGigEVisionSDK.so.4.5.0.3;subdir=../lib \
+	file://lib/aarch64/libMvSDKVersion.so;subdir=../lib \
+	file://lib/aarch64/libswscale.so;subdir=../lib \
+	file://lib/aarch64/MvProducerGEV.cti;subdir=../lib \
+	file://lib/aarch64/libavutil.so;subdir=../lib \
+	file://lib/aarch64/libMediaProcess.so;subdir=../lib \
+	file://lib/aarch64/libMvCameraControlWrapper.so.4.5.0.1;subdir=../lib \
+	file://lib/aarch64/libMVRender.so;subdir=../lib \
+	file://lib/aarch64/libMvUsb3vTL.so.4.5.0.3;subdir=../lib \
+	file://lib/aarch64/libusb-1.0.so.0;subdir=../lib \
+	file://lib/aarch64/MvProducerU3V.cti;subdir=../lib \
 "
 
 SRC_URI:append:arm = " \
