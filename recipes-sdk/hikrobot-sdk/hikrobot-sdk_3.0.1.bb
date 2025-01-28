@@ -127,9 +127,6 @@ FILES:${PN} += " \
         /opt/mvs/ReleaseNote_EN.txt \
 	/opt/mvs/lib \
 	/opt/mvs/license \
-	${D}${sysconfdir}/profile.d \
-"
-
-FILES:${PN}-dev += " \
 	/opt/mvs/include \
+	${D}${sysconfdir}/profile.d \
 "
