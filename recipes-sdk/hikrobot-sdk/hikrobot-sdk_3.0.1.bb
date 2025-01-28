@@ -6,54 +6,54 @@ SECTION = "sdk"
 LICENSE = "CLOSED"
 
 SRC_URI:append:aarch64 = " \
-	file://lib/aarch64/CommonParameters.ini \
-	file://lib/aarch64/libFormatConversion.so \
-	file://lib/aarch64/libMvCameraControl.so.4.5.0.3 \
-	file://lib/aarch64/libMVGigEVisionSDK.so.4.5.0.3 \
-	file://lib/aarch64/libMvSDKVersion.so \
-	file://lib/aarch64/libswscale.so \
-	file://lib/aarch64/MvProducerGEV.cti \
-	file://lib/aarch64/libavutil.so \
-	file://lib/aarch64/libMediaProcess.so \
-	file://lib/aarch64/libMvCameraControlWrapper.so.4.5.0.1 \
-	file://lib/aarch64/libMVRender.so \
-	file://lib/aarch64/libMvUsb3vTL.so.4.5.0.3 \
-	file://lib/aarch64/libusb-1.0.so.0 \
-	file://lib/aarch64/MvProducerU3V.cti \
+	file://lib/aarch64/CommonParameters.ini;subdir=lib \
+	file://lib/aarch64/libFormatConversion.so;subdir=lib \
+	file://lib/aarch64/libMvCameraControl.so.4.5.0.3;subdir=lib \
+	file://lib/aarch64/libMVGigEVisionSDK.so.4.5.0.3;subdir=lib \
+	file://lib/aarch64/libMvSDKVersion.so;subdir=lib \
+	file://lib/aarch64/libswscale.so;subdir=lib \
+	file://lib/aarch64/MvProducerGEV.cti;subdir=lib \
+	file://lib/aarch64/libavutil.so;subdir=lib \
+	file://lib/aarch64/libMediaProcess.so;subdir=lib \
+	file://lib/aarch64/libMvCameraControlWrapper.so.4.5.0.1;subdir=lib \
+	file://lib/aarch64/libMVRender.so;subdir=lib \
+	file://lib/aarch64/libMvUsb3vTL.so.4.5.0.3;subdir=lib \
+	file://lib/aarch64/libusb-1.0.so.0;subdir=lib \
+	file://lib/aarch64/MvProducerU3V.cti;subdir=lib \
 "
 
 SRC_URI:append:arm = " \
-        file://lib/arm/CommonParameters.ini \
-        file://lib/arm/libFormatConversion.so \
-        file://lib/arm/libMvCameraControl.so.4.5.0.3 \
-        file://lib/arm/libMVGigEVisionSDK.so.4.5.0.3 \
-        file://lib/arm/libMvSDKVersion.so \
-        file://lib/arm/libswscale.so \
-        file://lib/arm/MvProducerGEV.cti \
-        file://lib/arm/libavutil.so \
-        file://lib/arm/libMediaProcess.so \
-        file://lib/arm/libMvCameraControlWrapper.so.4.5.0.1 \
-        file://lib/arm/libMVRender.so \
-        file://lib/arm/libMvUsb3vTL.so.4.5.0.3 \
-        file://lib/arm/libusb-1.0.so.0 \
-        file://lib/arm/MvProducerU3V.cti \
+        file://lib/arm/CommonParameters.ini;subdir=lib \
+        file://lib/arm/libFormatConversion.so;subdir=lib \
+        file://lib/arm/libMvCameraControl.so.4.5.0.3;subdir=lib \
+        file://lib/arm/libMVGigEVisionSDK.so.4.5.0.3;subdir=lib \
+        file://lib/arm/libMvSDKVersion.so;subdir=lib \
+        file://lib/arm/libswscale.so;subdir=lib \
+        file://lib/arm/MvProducerGEV.cti;subdir=lib \
+        file://lib/arm/libavutil.so;subdir=lib \
+        file://lib/arm/libMediaProcess.so;subdir=lib \
+        file://lib/arm/libMvCameraControlWrapper.so.4.5.0.1;subdir=lib \
+        file://lib/arm/libMVRender.so;subdir=lib \
+        file://lib/arm/libMvUsb3vTL.so.4.5.0.3;subdir=lib \
+        file://lib/arm/libusb-1.0.so.0;subdir=lib \
+        file://lib/arm/MvProducerU3V.cti;subdir=lib \
 "
 
 SRC_URI:append:armhf = " \
-        file://lib/armhf/CommonParameters.ini \
-        file://lib/armhf/libFormatConversion.so \
-        file://lib/armhf/libMvCameraControl.so.4.5.0.3 \
-        file://lib/armhf/libMVGigEVisionSDK.so.4.5.0.3 \
-        file://lib/armhf/libMvSDKVersion.so \
-        file://lib/armhf/libswscale.so \
-        file://lib/armhf/MvProducerGEV.cti \
-        file://lib/armhf/libavutil.so \
-        file://lib/armhf/libMediaProcess.so \
-        file://lib/armhf/libMvCameraControlWrapper.so.4.5.0.1 \
-        file://lib/armhf/libMVRender.so \
-        file://lib/armhf/libMvUsb3vTL.so.4.5.0.3 \
-        file://lib/armhf/libusb-1.0.so.0 \
-        file://lib/armhf/MvProducerU3V.cti \
+        file://lib/armhf/CommonParameters.ini;subdir=lib \
+        file://lib/armhf/libFormatConversion.so;subdir=lib \
+        file://lib/armhf/libMvCameraControl.so.4.5.0.3;subdir=lib \
+        file://lib/armhf/libMVGigEVisionSDK.so.4.5.0.3;subdir=lib \
+        file://lib/armhf/libMvSDKVersion.so;subdir=lib \
+        file://lib/armhf/libswscale.so;subdir=lib \
+        file://lib/armhf/MvProducerGEV.cti;subdir=lib \
+        file://lib/armhf/libavutil.so;subdir=lib \
+        file://lib/armhf/libMediaProcess.so;subdir=lib \
+        file://lib/armhf/libMvCameraControlWrapper.so.4.5.0.1;subdir=lib \
+        file://lib/armhf/libMVRender.so;subdir=lib \
+        file://lib/armhf/libMvUsb3vTL.so.4.5.0.3;subdir=lib \
+        file://lib/armhf/libusb-1.0.so.0;subdir=lib \
+        file://lib/armhf/MvProducerU3V.cti;subdir=lib \
 "
 
 SRC_URI:append = " \
@@ -84,34 +84,34 @@ do_install:append() {
 	install -d ${D}${sysconfdir}/profile.d/
 
 	install -m 0755 ${S}/ReleaseNote_EN.txt ${D}/opt/mvs/
-	install -m 0755 ${S}/CLIENT_MVS_Linux_license_notice.txt ${D}/opt/mvs/license/
+	install -m 0755 ${S}/license/CLIENT_MVS_Linux_license_notice.txt ${D}/opt/mvs/license/
 
-	install -m 0755 ${S}/CommonParameters.ini ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libFormatConversion.so ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMvCameraControl.so.4.5.0.3 ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMVGigEVisionSDK.so.4.5.0.3 ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMvSDKVersion.so ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libswscale.so ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/MvProducerGEV.cti ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libavutil.so ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMediaProcess.so ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMvCameraControlWrapper.so.4.5.0.1 ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMVRender.so ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libMvUsb3vTL.so.4.5.0.3 ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/libusb-1.0.so.0 ${D}/opt/mvs/lib/
-	install -m 0755 ${S}/MvProducerU3V.cti ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/CommonParameters.ini ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libFormatConversion.so ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMvCameraControl.so.4.5.0.3 ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMVGigEVisionSDK.so.4.5.0.3 ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMvSDKVersion.so ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libswscale.so ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/MvProducerGEV.cti ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libavutil.so ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMediaProcess.so ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMvCameraControlWrapper.so.4.5.0.1 ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMVRender.so ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libMvUsb3vTL.so.4.5.0.3 ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/libusb-1.0.so.0 ${D}/opt/mvs/lib/
+	install -m 0755 ${S}/lib/MvProducerU3V.cti ${D}/opt/mvs/lib/
 
-	install -m 0755 ${S}/CameraParams.h ${D}/opt/mvs/include/
-	install -m 0755 ${S}/MvCameraControl.h ${D}/opt/mvs/include/
-	install -m 0755 ${S}/MvErrorDefine.h ${D}/opt/mvs/include/
-	install -m 0755 ${S}/MvISPErrorDefine.h ${D}/opt/mvs/include/
-	install -m 0755 ${S}/MvObsoleteInterfaces.h ${D}/opt/mvs/include/
-	install -m 0755 ${S}/ObsoleteCamParams.h ${D}/opt/mvs/include/
-	install -m 0755 ${S}/PixelType.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/CameraParams.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/MvCameraControl.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/MvErrorDefine.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/MvISPErrorDefine.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/MvObsoleteInterfaces.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/ObsoleteCamParams.h ${D}/opt/mvs/include/
+	install -m 0755 ${S}/include/PixelType.h ${D}/opt/mvs/include/
 
 	install -m 0755 ${S}/hikrobot.sh ${D}${sysconfdir}/profile.d/
 
-	cd ${D}${libdir}
+	cd ${D}/opt/mvs/lib
 	ln -sf libMvCameraControl.so.4.5.0.3 libMvCameraControl.so
 	ln -sf libMvCameraControlWrapper.so.4.5.0.1 libMvCameraControlWrapper.so
 	ln -sf libMVGigEVisionSDK.so.4.5.0.3 libMVGigEVisionSDK.so
